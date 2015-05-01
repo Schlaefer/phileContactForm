@@ -1,0 +1,39 @@
+{% if css %}
+<style>
+    {{ css }}
+</style>
+{% endif %}
+<form  action="" method="POST" enctype="multipart/form-data" class="contactForm">
+    {% if errorMsg %}
+    <p class="contactForm-message contactForm-message-error">
+        {{ errorMsg }}
+    </p>
+    {% endif %}
+
+    {% if infoMsg %}
+    <p class="contactForm-message contactForm-message-info">
+        {{ infoMsg }}
+    </p>
+    {% endif %}
+
+    <label for="name" class="contactForm-label">
+        {{ labels.name }}
+    </label>
+    <input id="name" name="name" type="text" value="{{ form.name }}" required="required" class="contactForm-input"/>
+
+    <label for="email" class="contactForm-label">
+        {{ labels.email }}
+    </label>
+    <input id="email" name="email" type="email" value="{{ form.email }}" required="required" class="contactForm-input"/>
+
+    <label for="message" class="contactForm-label">
+        {{ labels.message }}
+    </label>
+    <textarea id="message" name="message" rows="5" cols="25" required="required" class="contactForm-input">{{ form.message }}</textarea>
+
+    <input type="hidden" name="send" value="1">
+
+    <input type="submit" value="{{ labels.submit }}"/>
+</form>
+
+

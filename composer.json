@@ -1,0 +1,11 @@
+{
+  "name": "siezi/phile-contact-form",
+  "type": "phile-plugin",
+  "license": "GPL-3.0",
+  "description": "Contact Form Plugin for PhileCMS",
+  "homepage": "https://github.com/Schlaefer/phileContactForm",
+  "keywords": ["phile", "contact", "form"],
+  "require": {
+    "phile-cms/phile": ">=1.5.0"
+  }
+}
