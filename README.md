@@ -47,7 +47,7 @@ See `config.php`.
 
 #### Events ####
 
-##### plugin.phile.contactForm.send #####
+##### plugin.siezi.contactForm.send #####
 
 Triggered when the received form data is processed.
 

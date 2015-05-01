@@ -83,7 +83,7 @@ class Plugin extends AbstractPlugin
                     'message' => $form['message'],
                     'success' => &$success,
                 ];
-                \Phile\Core\Event::triggerEvent('plugin.phile.contactForm.send', $data);
+                \Phile\Core\Event::triggerEvent('plugin.siezi.contactForm.send', $data);
                 if (is_callable($data['success'])) {
                     $success = call_user_func($data['success'], $data);
                 } elseif (is_bool($data['success'])) {
