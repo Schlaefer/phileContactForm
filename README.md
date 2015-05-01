@@ -29,7 +29,7 @@ $config['plugins']['siezi\\phileContactForm'] = ['active' => true];
 Set the email-address the contact form is send to:
 
 ```php
-$config['plugins']['siezi\\phileContactForm'] = ['recipient-email' => 'contact@example.com'];
+$config['plugins']['siezi\\phileContactForm']['recipient-email'] = 'contact@example.com';
 ```
 
 Put
